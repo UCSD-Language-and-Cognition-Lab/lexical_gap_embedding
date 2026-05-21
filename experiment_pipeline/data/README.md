@@ -1,4 +1,4 @@
-Experiment scripts (df_creation.py, pipeline.py) use .pkl for local load and save.
+Experiment scripts (df_creation.py, pipeline.py, analysis.ipynb) use .pkl for local load and save.
 
 Data files on github (df_map, df_gap) are stored as .parquet
 
