@@ -65,11 +65,12 @@ model = AutoModelForCausalLM.from_pretrained(
     model_dir,
     torch_dtype=torch.bfloat16,
     device_map="auto",
-    trust_remote_code=True
+    trust_remote_code=True,
+    local_files_only=True
 )
 
 # load the tokenizer
-tokenizer = AutoTokenizer.from_pretrained(model_dir) #replace 'model_dir' with 'model_name' if 'model_dir' throws an error
+tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 ##### Filter the words based on the annotations on acceptability judgments: 'I feel' and 'I am' #####
 ### filter out words that are not acceptable in 'I feel' context ###

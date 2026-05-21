@@ -1,0 +1,96 @@
+name: embed_extraction
+channels:
+  - defaults
+  - nvidia
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.8.20
+
+  - pytorch=2.4.1=py3.8_cuda12.4_cudnn9.1.0_0
+  - pytorch-cuda=12.4
+  - pytorch-mutex=1.0=cuda
+  - torchtriton=3.0.0=py38
+
+  - cuda-cudart=12.4.127
+  - cuda-libraries=12.4.1
+  - cuda-nvrtc=12.4.127
+  - cuda-nvtx=12.4.127
+  - cuda-runtime=12.4.1
+  - libcublas=12.4.5.8
+  - libcufft=11.2.1.3
+  - libcusolver=11.6.1.9
+  - libcusparse=12.3.1.170
+
+  - transformers=4.46.3
+  - tokenizers=0.20.1
+  - huggingface_hub=0.24.6
+  - safetensors=0.4.5
+  - datasets=2.19.1       
+  - filelock=3.13.1
+  - fsspec=2024.3.1
+  - tqdm=4.66.5
+  - regex=2024.9.11
+  - packaging=24.1
+  - pyyaml=6.0.2
+
+  - pip:
+    - accelerate==1.0.1
+    - psutil==7.1.3
+
+  - pandas=2.0.3
+  - numpy=1.24.3
+  - openpyxl=3.1.5        
+  - nltk=3.9.1             
+
+  - requests=2.32.3
+  - urllib3=2.2.3
+  - certifi=2024.8.30
+  - charset-normalizer=3.3.2
+  - idna=3.7
+  - pysocks=1.7.1
+
+  - setuptools=75.1.0
+  - wheel=0.44.0
+  - pip=24.2
+  - openssl=3.0.18
+  - ca-certificates=2025.11.4
+  - ncurses=6.5
+  - readline=8.3
+  - sqlite=3.50.2
+  - tk=8.6.15
+  - xz=5.6.4
+  - zlib=1.3.1
+  - libffi=3.4.4
+  - bzip2=1.0.8
+  - libgcc-ng=11.2.0
+  - libstdcxx-ng=11.2.0
+  - libgomp=11.2.0
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+
+  - typing_extensions=4.11.0
+  - six=1.16.0
+  - python-dateutil=2.9.0post0
+  - pytz=2024.1
+  - python-tzdata=2025.2
+  - sympy=1.13.3
+  - mpmath=1.3.0
+  - networkx=3.1
+  - jinja2=3.1.4
+  - markupsafe=2.1.3
+  - joblib=1.4.2
+  - click=8.1.7
+  - multiprocess=0.70.15
+  - dill=0.3.8
+  - multidict=6.0.4
+  - yarl=1.11.0
+  - aiohttp=3.10.5
+  - aiosignal=1.2.0
+  - frozenlist=1.4.0
+  - attrs=24.2.0
+  - async-timeout=4.0.3
+  - aiohappyeyeballs=2.4.0
+  - xxhash=0.8.0
+  - python-xxhash=2.0.2
+  - pyarrow=16.1.0         

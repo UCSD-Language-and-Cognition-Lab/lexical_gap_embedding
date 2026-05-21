@@ -9,6 +9,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 model = AutoModelForCausalLM.from_pretrained(
     "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    revision="0ff6b5ec", # newer version requires transformers v5, and therefore, pin to the older version
     torch_dtype=torch.bfloat16,
     trust_remote_code=True,
     device_map="auto"
