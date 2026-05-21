@@ -28,9 +28,3 @@ Embedding dims for (alldims) spaces vary per model family
 | 1792          | ~10ms             | ~90ms            | ~1.17s             | ~97ms             | ~1.4s          |
 | 2560          | ~14ms             | ~96ms            | ~3.6s              | ~125ms            | ~3.8s          |
 | 4096          | ~16ms             | ~121ms           | ~14.2s             | ~148ms            | ~14.5s         |
-
-
---
-
-### embedding_retrieval.py
-
