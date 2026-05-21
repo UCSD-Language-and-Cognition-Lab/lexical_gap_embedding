@@ -5,6 +5,7 @@ File and logging utils for conceptual gap experiment pipeline.
 import pickle
 from pathlib import Path
 import logging
+import numpy as np
 
 def load(path: str):
     '''
@@ -54,3 +55,22 @@ def setup_logging(path: str, name='pipeline'):
         ],
         force=True,
     )
+
+def lists_to_vecs(df, vec_cols):
+    '''
+    Converts .parquet formatted embedding vectors to numpy arrays, for df_map and df_gap
+
+    Args:
+        df: DataFrame (df_map, df_gap)
+        vec_cols: Columns in df with vectors (src_vec, tgt_vec for df_map, src_vec for df_gap)
+
+    Returns:
+        DataFrame with vector columns cast to np.float32 numpy arrays
+    '''
+
+    df = df.copy()
+
+    for col in vec_cols:
+        df[col] = df[col].apply(lambda v: np.asarray(v, dtype=np.float32))
+
+    return df    
