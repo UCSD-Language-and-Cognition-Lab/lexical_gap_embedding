@@ -56,13 +56,14 @@ def setup_logging(path: str, name='pipeline'):
         force=True,
     )
 
+
 def lists_to_vecs(df, vec_cols):
     '''
     Converts .parquet formatted embedding vectors to numpy arrays, for df_map and df_gap
 
     Args:
         df: DataFrame (df_map, df_gap)
-        vec_cols: Columns in df with vectors (src_vec, tgt_vec for df_map, src_vec for df_gap)
+        vec_cols: Columns in df with vectors (src_vec/tgt_vec for df_map, src_vec for df_gap)
 
     Returns:
         DataFrame with vector columns cast to np.float32 numpy arrays
