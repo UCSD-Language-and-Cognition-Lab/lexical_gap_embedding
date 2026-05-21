@@ -7,6 +7,7 @@ from pathlib import Path
 import logging
 import numpy as np
 
+
 def load(path: str):
     '''
     Load pickle file from local filepath.
