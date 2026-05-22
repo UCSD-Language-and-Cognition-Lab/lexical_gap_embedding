@@ -70,7 +70,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 # load the tokenizer
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name) # if model_name doesn't work for your model, try model_dir instead (+ add trust_remote_code=True and local_files_only=True)
 
 ##### Filter the words based on the annotations on acceptability judgments: 'I feel' and 'I am' #####
 ### filter out words that are not acceptable in 'I feel' context ###

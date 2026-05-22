@@ -7,11 +7,11 @@ channels:
 dependencies:
   - python=3.8.20
 
+  # cuda-related dependencies are specific to the hardware we used (NVIDIA RTX A6000)
   - pytorch=2.4.1=py3.8_cuda12.4_cudnn9.1.0_0
   - pytorch-cuda=12.4
   - pytorch-mutex=1.0=cuda
   - torchtriton=3.0.0=py38
-
   - cuda-cudart=12.4.127
   - cuda-libraries=12.4.1
   - cuda-nvrtc=12.4.127

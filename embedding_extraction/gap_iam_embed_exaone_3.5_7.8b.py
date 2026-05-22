@@ -68,7 +68,7 @@ model = AutoModelForCausalLM.from_pretrained(
     local_files_only=True
 )
 
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name) # if model_name doesn't work for your model, try model_dir instead (+ add trust_remote_code=True and local_files_only=True)
 
 ##### Preprocess words in the gap dataframe #####
 # whether the words are unique only in Korean or in English
