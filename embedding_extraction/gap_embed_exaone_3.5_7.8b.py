@@ -234,4 +234,4 @@ for i, word in enumerate(eng_adj_gap_iam):
     iam_embed_dict_gap[word]= {'language':'English', 'embed': embedding_eng, 'embed_first': embed_eng_first, 'embed_last4': embedding_eng_last4}
 
 # save the dictionary of embeddings
-torch.save(iam_embed_dict_gap, './iam_embed_adj(gap)_exaone_3.5_7.8b_updated.pt') #change this to your own directory, match the model version
+torch.save(iam_embed_dict_gap, './iam_embed_adj_gap_exaone_3.5_7.8b_updated.pt') #change this to your own directory, match the model version
