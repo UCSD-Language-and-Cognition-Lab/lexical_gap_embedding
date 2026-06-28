@@ -15,6 +15,7 @@ This module provides a demonstration using the bilingual LLM EXAONE-3.5-7.8B, on
 - Getting the embeddings of non-gap words and storing them in a dictionary format: `non-gap_embed_exaone_3.5_7.8b.py`  
 
 ### 2. [Experiments and evaluation](./experiment_pipeline/)
+- Data: https://github.com/yoonwonj/EVOKE
 - Processing the embedding dictionaries into dataframes for the experiment pipeline: `df_creation.py`
 - Configurations and parameter settings for experiment runs: `config.py`
 - Experiment pipeline (lexical gap detection): `pipeline.py`
@@ -23,4 +24,4 @@ This module provides a demonstration using the bilingual LLM EXAONE-3.5-7.8B, on
 Plese refer to the paper for detailed experiment and evaluation procedures.
 
 ## Citation
-*Discovering Lexical Gaps Using Embeddings from Multilingual LLMs* (pending link)
+Jung, Y., Cohen, A. S., & Bergen, B. K. (2026). Discovering Lexical Gaps Using Embeddings from Multilingual LLMs. *arXiv [Cs.CL]*. Retrieved from https://arxiv.org/abs/2605.24310.
